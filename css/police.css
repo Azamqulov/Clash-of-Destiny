@@ -1,0 +1,225 @@
+/* Policy Pages Styling for Block Blast! */
+
+/* Base styles to match main site */
+:root {
+    --primary-color: #1a3a6e;
+    --secondary-color: #e63946;
+    --text-color: #ffffff;
+    --dark-color: #0a1929;
+    --light-color: #f8f9fa;
+    --transition: all 0.3s ease;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--dark-color);
+    overflow-x: hidden;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Policy page specific styling */
+  .policy-hero {
+    padding: 150px 0 80px;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/drift-background.jpg") no-repeat
+      center center / cover;
+  }
+  
+  .policy-hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .policy-hero p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .policy-content {
+    padding: 60px 0;
+  }
+  
+  .policy-container {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .policy-container h2 {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .policy-container h3 {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin: 30px 0 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .policy-container h4 {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin: 25px 0 10px;
+  }
+  
+  .policy-container p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .policy-container ul,
+  .policy-container ol {
+    margin: 15px 0 25px 20px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .policy-container li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+  
+  .policy-container a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: var(--transition);
+  }
+  
+  .policy-container a:hover {
+    text-decoration: underline;
+  }
+  
+  .policy-date {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+  }
+  
+  .policy-navigation {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .policy-navigation a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: var(--transition);
+  }
+  
+  .policy-navigation a:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-3px);
+  }
+  
+  .policy-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0 30px;
+  }
+  
+  .policy-table th {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 12px 15px;
+    text-align: left;
+    color: var(--text-color);
+  }
+  
+  .policy-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .policy-table tr:hover td {
+    background-color: rgba(255, 255, 255, 0.03);
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 992px) {
+    .policy-hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .policy-container {
+      padding: 30px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .policy-hero {
+      padding: 120px 0 60px;
+    }
+  
+    .policy-hero h1 {
+      font-size: 2rem;
+    }
+  
+    .policy-container h2 {
+      font-size: 1.8rem;
+    }
+  
+    .policy-container h3 {
+      font-size: 1.3rem;
+    }
+  
+    .policy-navigation {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .policy-navigation a {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .policy-hero h1 {
+      font-size: 1.8rem;
+    }
+  
+    .policy-container {
+      padding: 20px;
+    }
+  
+    .policy-container h2 {
+      font-size: 1.5rem;
+    }
+  
+    .policy-container h3 {
+      font-size: 1.2rem;
+    }
+  
+    .policy-container h4 {
+      font-size: 1.1rem;
+    }
+  }
+  
+  
